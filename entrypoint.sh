@@ -2,6 +2,8 @@
 
 set -e
 
-rm -f /sample-api/tmp/pids/server.pid
+cd /app
+
+rm -f tmp/pids/server.pid
 
 exec "$@"
